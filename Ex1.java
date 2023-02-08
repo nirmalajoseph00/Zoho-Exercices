@@ -1,7 +1,5 @@
 class Browser {
-	private static String url[]=new String[10]; //how we add new urls if array is static
-	//fixed number doesn't change
-	//entire history passed during declaration of object itself
+	private static String url[]=new String[10]; 
 	static int index=0;
 	Browser(){
 			setURL("url1");
@@ -17,7 +15,7 @@ class Browser {
 	public void setURL(String s)
 	{
 		this.url[index]=s;
-		index++;   //this cannot be used in static context
+		index++;  
 	}
 	
 	public String getURL(int j)
