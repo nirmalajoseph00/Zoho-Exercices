@@ -29,15 +29,17 @@ class Browser {
 			System.out.println(getURL(i)+"\n");
 	}
 }
+sdkjad
 
 public class Demo
 {
 	public static void main(String args[])
 	{
+		
 		String urlHistory1[]= {"url2","url3","url4"};
-		Browser B1=new Browser();
+		Browser googleChrome=new Browser();
 		B1.display();
-		Browser B2=new Browser(urlHistory1);
+		Browser mozillaFirefox=new Browser(urlHistory1);
 		B2.display();
 		
 	}
