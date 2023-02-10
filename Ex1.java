@@ -1,7 +1,7 @@
 import java.util.*;
 
 class Browser {
-	static ArrayList<String> url = new ArrayList<>();
+	private static ArrayList<String> url = new ArrayList<>();
 	
 	Browser(){
 			setURL("url1");
