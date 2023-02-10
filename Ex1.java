@@ -1,8 +1,6 @@
-import java.util.*;
-
 class Browser {
-	static ArrayList<String> url = new ArrayList<>();
-	
+	private static String url[]=new String[10]; 
+	static int index=0;
 	Browser(){
 			setURL("url1");
 
@@ -16,14 +14,19 @@ class Browser {
 
 	public void setURL(String s)
 	{
-		url.add(s);
+		this.url[index]=s;
+		index++;  
 	}
 	
+	public String getURL(int j)
+	{
+		return url[j];
+	}
 	public void display()  
 	{  
 		System.out.println("Browser History \n");
-		for(int i=0;i<url.size();i++)
-			System.out.println(url.get(i)+"\n");
+		for(int i=0;i<10;i++)
+			System.out.println(getURL(i)+"\n");
 	}
 }
 
